@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.43/moment-timezone-with-data-1970-2030.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.37/moment-timezone-with-data-1970-2030.js"></script>
     <title>Document</title>
     <style>
       label {
@@ -28,15 +28,18 @@
       <option value="Asia/Tokyo">Tokyo 🇯🇵</option>
     </select>
     <script>
-      function showSelectedCity(event); {
-          if (event.target.value > 0) {
-              let currentTime = moment().tz(event.target.value).format("dddd, MMMM D, YYYY h:mm A");
+      function showDate(event) {
+        if (event.target.value.length > 0) {
+          let currentTime = moment()
+            .tz(event.target.value)
+            .format("dddd, MMMM D, YYYY h:mm A");
 
-            alert(`It is ${currentTime} in ${event.target.value}`);
-            }
-            }
-            let selectElement = document.querySelector("#city");
-            selectElement.addEventListener("change", showDate)
+          alert(`It is ${currentTime} in ${event.target.value}`);
+        }
+      }
+
+      let selectElement = document.querySelector("#city");
+      selectElement.addEventListener("change", showDate);
     </script>
   </body>
 </html>
