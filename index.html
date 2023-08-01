@@ -5,20 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.37/moment-timezone-with-data-1970-2030.js"></script>
-    <title>Document</title>
-    <style>
-      label {
-        font-family: sans-serif;
-        font-size: 16px;
-        padding-right: 10px;
-      }
-
-      select {
-        border-radius: 10px;
-        font-size: 14px;
-        padding: 2px 5px;
-      }
-    </style>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>World Clock</title>
   </head>
   <body>
     <select id="city">
@@ -27,19 +15,12 @@
       <option value="Australia/Sydney">Sydney 🇦🇺</option>
       <option value="Asia/Tokyo">Tokyo 🇯🇵</option>
     </select>
-    <script>
-      function showDate(event) {
-        if (event.target.value.length > 0) {
-          let currentTime = moment()
-            .tz(event.target.value)
-            .format("dddd, MMMM D, YYYY h:mm A");
-
-          alert(`It is ${currentTime} in ${event.target.value}`);
-        }
-      }
-
-      let selectElement = document.querySelector("#city");
-      selectElement.addEventListener("change", showDate);
-    </script>
+    <footer>
+      This project was coded by Brooklyn Van Bebber and is
+      <a href="https://github.com/ANurfHerder/clock-app" target="_blank"
+        >open source on GitHub</a
+      >
+    </footer>
+    <script src="javascript/index.js"></script>
   </body>
 </html>
