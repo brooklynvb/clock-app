@@ -1,18 +1,30 @@
-body {
-  background: #5c5470;
-  font-family: "Courier New", Courier, monospace;
+html {
+  background-image: url("https://giffiles.alphacoders.com/105/105186.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #edeaf7;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  font-family: "Tektur", cursive;
 }
 
 .container {
   max-width: 600px;
   margin: 0 auto;
-  background: #dbd8e3;
-  box-shadow: 10px 10px 10px #352f44;
+  background: #dbd8e38e;
+  box-shadow: 10px 10px 10px #0e0b14;
   border-radius: 10px;
+}
+a {
+  text-decoration: none;
+  color: #331333;
 }
 h1 {
   text-align: center;
   padding-top: 20px;
+  font-size: 60px;
+  margin-bottom: 10px;
 }
 h2 {
   margin: 0;
@@ -44,16 +56,31 @@ h2 {
 
 select {
   display: block;
-  background-color: #dbd8e3;
+  background-color: #dbd8e333;
   margin: 0 auto;
   border-color: #352f44a1;
   border-radius: 10px;
   font-size: 14px;
   padding: 5px 5px;
-  width: 50%;
-  font-family: "Courier New", Courier, monospace;
+  width: 30%;
+  font-family: "Tektur", cursive;
 }
 footer {
+  padding-top: 10px;
   text-align: center;
   font-size: 14px;
+  color: #f2effa;
+}
+.name {
+  color: #e9afe4;
+}
+.git {
+  color: #e9afe4;
+}
+
+.home {
+  padding-bottom: 15px;
+  color: black;
+  font-size: 12px;
+  text-align: center;
 }
