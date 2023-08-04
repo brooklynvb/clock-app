@@ -8,13 +8,29 @@ html {
   margin: 0;
   font-family: "Tektur", cursive;
 }
-
-.container {
-  max-width: 600px;
-  margin: 0 auto;
+.left {
+  width: 50%;
+  float: left;
+}
+.title {
+  width: 300px;
   background: #dbd8e38e;
   box-shadow: 10px 10px 10px #0e0b14;
   border-radius: 10px;
+  margin: 0 auto;
+  margin-top: 100px;
+  padding-bottom: 20px;
+}
+.right {
+  width: 50%;
+  float: right;
+}
+.cities {
+  width: 500px;
+  background: #dbd8e38e;
+  box-shadow: 10px 10px 10px #0e0b14;
+  border-radius: 10px;
+  margin-top: 100px;
 }
 a {
   text-decoration: none;
@@ -36,11 +52,14 @@ h2 {
   margin: 20px 25px;
   border-bottom: 1px dashed #2a24388a;
 }
+.city:first-child {
+  padding-top: 7px;
+}
 .city:last-child {
   border: none;
 }
 .time {
-  font-size: 48px;
+  font-size: 40px;
 }
 .time small {
   font-size: 20px;
@@ -50,8 +69,8 @@ h2 {
 
 .date {
   opacity: 0.7;
-  margin-bottom: 20px;
-  margin-top: 5px;
+  margin-bottom: 15px;
+  margin-top: 0px;
 }
 
 select {
@@ -62,10 +81,12 @@ select {
   border-radius: 10px;
   font-size: 14px;
   padding: 5px 5px;
-  width: 30%;
+  width: 50%;
   font-family: "Tektur", cursive;
 }
 footer {
+  width: 300px;
+  margin: 0 auto;
   padding-top: 10px;
   text-align: center;
   font-size: 14px;
